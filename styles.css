@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  background: rgb(27, 194, 245);
+  background-image: url("../img/fondo.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card5 {
+  width: 65px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 33px; left: 90px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card6 {
+  width: 63px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 33px; left: 160px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card7{
+  width: 63px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 33px; left: 231px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card8 {
+  width: 65px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 33px; left: 301px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card4 {
+  width: 135px;
+  height: 65px;
+  margin: 5px;
+  position: absolute;
+  top: 172px; left: -53px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card3 {
+  width: 136px;
+  height: 63px;
+  margin: 5px;
+  position: absolute;
+  top: 244px; left: -53px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card2 {
+  width: 136px;
+  height: 62px;
+  margin: 5px;
+  position: absolute;
+  top: 310px; left: -53px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card1 {
+  width: 136px;
+  height: 63px;
+  margin: 5px;
+  position: absolute;
+  top: 382px; left: -53px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card9 {
+  width: 136px;
+  height: 65px;
+  margin: 5px;
+  position: absolute;
+  top: 172px; left: 382px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card10 {
+  width: 136px;
+  height: 63px;
+  margin: 5px;
+  position: absolute;
+  top: 244px; left: 382px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card11 {
+  width: 136px;
+  height: 63px;
+  margin: 5px;
+  position: absolute;
+  top: 310px; left: 382px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card12 {
+  width: 136px;
+  height: 63px;
+  margin: 5px;
+  position: absolute;
+  top: 382px; left: 382px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card16 {
+  width: 65px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 460px; left: 94px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.memory-card17 {
+  width: 65px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 460px; left: 14px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+
+}
+
+.memory-card15 {
+  width: 63px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 460px; left: 166px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card14{
+  width: 63px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 460px; left: 237px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card13 {
+  width: 65px;
+  height: 135px;
+  margin: 5px;
+  position: absolute;
+  top: 460px; left: 308px;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+.memory-card1:active {
+  transform: scale(0.27);
+  transition: transform .2s;
+}
+
+.memory-card1.flip {
+  transform: rotateY(180deg);
+
+}
+
+.memory-card2:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card2.flip {
+  transform: rotateY(180deg);
+}
+.memory-card3:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card3.flip {
+  transform: rotateY(180deg);
+}
+.memory-card4:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card4.flip {
+  transform: rotateY(180deg);
+}
+.memory-card5:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card5.flip {
+  transform: rotateY(180deg);
+}
+.memory-card6:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card6.flip {
+  transform: rotateY(180deg);
+}
+.memory-card7:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card7.flip {
+  transform: rotateY(180deg);
+}
+.memory-card8:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card8.flip {
+  transform: rotateY(180deg);
+}
+.memory-card9:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card9.flip {
+  transform: rotateY(180deg);
+}
+.memory-card10:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card10.flip {
+  transform: rotateY(180deg);
+}
+.memory-card11:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card11.flip {
+  transform: rotateY(180deg);
+}
+.memory-card12:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card12.flip {
+  transform: rotateY(180deg);
+}
+.memory-card13:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card13.flip {
+  transform: rotateY(180deg);
+}
+.memory-card14:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card14.flip {
+  transform: rotateY(180deg);
+}
+.memory-card15:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card15.flip {
+  transform: rotateY(180deg);
+}
+.memory-card16:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card16.flip {
+  transform: rotateY(180deg);
+}
+.memory-card17:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card17.flip {
+  transform: rotateY(180deg);
+}
+.front-face:not(.one) {
+  width: 110%;
+  height: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 0px; left: 0px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face.one{
+  width: 110%;
+  height: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 30px; left: 0px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face.two{
+  width: 110%;
+  height: 50%;
+  padding: 20px;
+  position: absolute;
+  top: 60px; left: 0px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face.three {
+  width: 50%;
+  height: 110%;
+  padding: 20px;
+  position: absolute;
+  top: 0px; left: 0px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face.four{
+  width: 50%;
+  height: 110%;
+  padding: 20px;
+  position: absolute;
+  top: 0px; left: 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face.five{
+  width: 50%;
+  height: 110%;
+  padding: 20px;
+  position: absolute;
+  top: 0px; left: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.front-face{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+
+  backface-visibility: hidden;
+}
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn:active {
+  transform: translate(0px, -5px);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.25);
+}
+.btn--blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+.btn--blue:hover {
+  background-color: #6FC6FF;
+}

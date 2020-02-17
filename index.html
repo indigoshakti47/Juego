@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Game</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <button id="btn" class="btn btn--blue">Jugar
+    <div id="d"></div>
+  </button>
+
+  <!--<img src="../img/Ficha_Azul.png" id="disappearing" /> -->
+
+  <section class="memory-game">
+    <div class="memory-card1" data-framework="aurelia">
+      
+      <img class="front-face three" src="../img/Ficha_Amarilla.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Ficha_Azul.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Ficha_Azul.png" alt="JS Badge" />
+    </div>
+
+    <div class="memory-card2" data-framework="aurelia">
+      <img class="front-face three" src="../img/Ficha_Amarilla.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Ficha_Azul.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Ficha_Azul.png" alt="JS Badge" />
+
+    </div>
+
+    <div class="memory-card3" data-framework="vue">
+      <img class="front-face three" src="../img/Ficha_Amarilla.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Ficha_Azul.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Ficha_Azul.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card4" data-framework="vue">
+      <img class="front-face three" src="../img/Ficha_Amarilla.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Ficha_Azul.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Ficha_Azul.png" alt="JS Badge" />
+
+    </div>
+
+    <div class="memory-card5" data-framework="angular">
+      <img class="front-face" src="../img/Fichas_Derecha/Ficha_Amarilla_Derecha.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card6" data-framework="angular">
+      <img class="front-face" src="../img/Fichas_Derecha/Ficha_Amarilla_Derecha.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card7" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Derecha/Ficha_Amarilla_Derecha.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card8" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Derecha/Ficha_Amarilla_Derecha.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Derecha/Ficha_Azul_Rey_Derecha.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card9" data-framework="angular">
+      <img class="front-face three" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card10" data-framework="angular">
+      <img class="front-face three" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+    </div>
+    <div class="memory-card11" data-framework="react">
+      <img class="front-face three" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card12" data-framework="react">
+      <img class="front-face three" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face four" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+      <img class="front-face five" src="../img/Fichas_Abajo/Ficha_Amarilla_Abajo.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card13" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card14" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card15" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+
+    </div>
+    <div class="memory-card16" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <!--<img class="back-face" src="../img/Ficha_Amarilla.png" alt="JS Badge" />-->
+
+    </div>
+    <div class="memory-card17" data-framework="react">
+      <img class="front-face" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face one" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <img class="front-face two" src="../img/Fichas_Izquierda/Ficha_Amarilla_Izquierda.png" alt="JS Badge" />
+      <!--<img class="back-face" src="../img/Ficha_Amarilla.png" alt="JS Badge" />-->
+
+    </div>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
